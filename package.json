@@ -1,0 +1,20 @@
+{
+	"name": "masterClassTDD-EW",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "npx mocha --parallel --exit __test__/",
+		"test:dev": "npx mocha  __test__/ -w",
+		"test:cov": "npx nyc --reporters=html,text npm test"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"chai": "^4.2.0",
+		"mocha": "^8.2.1",
+		"nyc": "^15.1.0",
+		"sinon": "^9.2.3"
+	}
+}
