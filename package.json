@@ -4,15 +4,17 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "npx mocha --parallel --exit __test__/",
-		"test:dev": "npx mocha  __test__/ -w",
-		"test:cov": "npx nyc --reporters=html,text npm test"
+		"start": "node src/index.js",
+		"test": "npx mocha --parallel --exit test/",
+		"test:dev": "npx mocha test/ -w",
+		"cov": "npx nyc --reporter=html npm run test"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
 		"chai": "^4.2.0",
+		"lokijs": "^1.5.11",
 		"mocha": "^8.2.1",
 		"nyc": "^15.1.0",
 		"sinon": "^9.2.3"
